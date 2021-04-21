@@ -1,0 +1,584 @@
+<html>
+
+<head>
+    <title>search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+    <link rel="stylesheet" href="css/fontawesom/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-rtl.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body style="background-color: #F5F5F5;">
+    <header class="bg-white">
+        <div class="container my-2">
+            <div class="row top-header">
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="col-12 text-center text-md-right">
+                            <span class="ml-2 text-muted"><i class="fas fa-unlock ml-2"></i>فروشگاه اینترنتی دیجی کالا - <a href="">وارد شوید</a></span>
+                            <a href=""><i class="fas fa-user-plus ml-2"></i>ثبت نام کنید</a>
+                        </div>
+                        <div class="col-12">
+                            <div class="row my-3 d-flex justify-content-between align-items-center">
+                                <div class="col-12 d-flex">
+                                    <div class="basket text-white text-center text-md-right">
+                                        <i class="fas fa-cart-plus"></i>
+                                        <span>سبد خرید</span>
+                                        <span class="badge bg-op ml-3 px-2">0</span>
+                                    </div>
+                                    <div class="w-50">
+                                        <form action="test.html" method="get" class="d-flex form-in">
+                                            <input type="text" name="searchData" class="form-control mr-2 text-center text-md-right textbox-search w-100" placeholder="نام کتاب نویسنده و یا دسته ی مورد علاقه خود را جست و جو کنید... ">
+                                            <button class="btn  btn-search"><i class="fas fa-search text-white"></i></button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <a href="">
+                        <img src="images/logo-cofe.png" alt="" width="100px" class="float-left d-none d-md-flex">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light section py-0">
+            <!-- navbar -->
+            <div class="container">
+                <button class="navbar-toggler my-2" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                <div class="collapse navbar-collapse " id="navbar">
+                    <ul class="navbar-nav navbar-right  text-right ml-auto text-center text-md-right px-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">کتاب عمومی<i class="fas fa-book mr-2"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">کتاب دانشگاهی<i class="fas fa-university mr-2"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">کتاب درسی <i class="fas fa-graduation-cap mr-2"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">کتاب زندگی<i class="fas fa-heart mr-2"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <!--end collapse-->
+            </div>
+        </nav>
+    </header>
+    <!--end header-->
+    <main>
+        <div class="container">
+            <div class="row px-4">
+                <!--start sidebar-->
+                <div class="col-12 col-md-3 mt-3 mb-3 sm sidebar">
+                    <div class="bg-white filters p-2 shadow-media">
+                        <div class="d-flex justify-content-between titr-filter">
+                            <h4>فیلتر های اعمال شده :</h4>
+                            <a href="#">حذف همه</a>
+                        </div>
+                        <div class="d-flex ">
+                            <div class="filter-color d-flex">
+                                <p class="mb-0 pr-2">آبی</p>
+                                <button type="button" class="close" aria-label="Close">
+                                    <i class="fa fa-times pr-2 "></i>
+                                </button>
+                            </div>
+                            <div class="filter-color d-flex">
+                                <p class="mb-0 pr-2">قرمز</p>
+                                <button type="button" class="close" aria-label="Close">
+                                    <i class="fa fa-times pr-2 "></i>
+                                </button>
+                            </div>
+                            <div class="filter-color d-flex">
+                                <p class="mb-0 pr-2">سبز</p>
+                                <button type="button" class="close" aria-label="Close">
+                                    <i class="fa fa-times pr-2 "></i>
+                                </button>
+                            </div>
+                            <div class="filter-color d-flex">
+                                <p class="mb-0 pr-2">مشکی</p>
+                                <button type="button" class="close" aria-label="Close">
+                                    <i class="fa fa-times px-2 "></i>
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="mt-2 p-2 bg-white shadow-media">
+                        <div class=" titr">
+                            <h4>دسته بندی</h4>
+                        </div>
+                        <div>
+
+                            <ul class="list-unstyled pr-0 mt-2 digital">
+                                <li class="d-flex align-items-center">
+                                    <i class="fa fa-angle-left px-2"></i>
+                                    <a href="#">
+                                        <p class="mb-0"> کالای دیجیتال</p>
+                                    </a>
+                                </li>
+                                <ul class="list-unstyled pr-4">
+                                    <li class=" d-flex align-items-center mt-2">
+                                        <i class="fa fa-angle-down px-2"></i>
+                                        <a href="#">
+                                            <p class="mb-0">گوشی مبایل</p>
+                                        </a>
+                                    </li>
+                                    <li class="mr-4 mobile-li">موبایل</li>
+                                    <li class="mr-4 mt-2 mobile-li">موبایل</li>
+                                    <li class="mr-4 mt-2 mobile-li">موبایل</li>
+                                    <li class="mr-4 mt-2 mobile-li">موبایل</li>
+                                    <li class="mr-4 mt-2 mobile-li">موبایل</li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bg-white shadow-media mt-2 p-2">
+                        <div class="titr">
+                            <h4>جستوجو در نتایج</h4>
+                        </div>
+                        <form action="" class="mt-2">
+                            <input type="text" placeholder="نام کتاب مورد نظرتان را وارد کنید" class="bs">
+                            <i class="fa fa-search serchabsulute"></i>
+                        </form>
+                    </div>
+                    <div class="shadow-media">
+                        <!--start brands-->
+                        <div class="bg-white shadow-media mt-2 p-2" data-toggle="collapse" data-target="#filtercollapse">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="mb-0">برند</h4>
+                                <i class="fa fa-angle-down"></i>
+                            </div>
+                        </div>
+                        <div class="collapse" id="filtercollapse">
+                            <div class="bg-white px-2">
+                                <div class="bg-white brands py-2">
+                                    <form action="" class="form-group mr-2 d-flex flex-column mb-0">
+                                        <div class="d-flex">
+                                            <input type="checkbox" class="form-check-input">
+                                            <label class="form-check-label mr-4"> آیفون</label>
+                                        </div>
+                                        <div class="d-flex">
+                                            <input type="checkbox" class="form-check-input">
+                                            <label class="form-check-label mr-4"> سامسونگ</label>
+                                        </div>
+                                        <div class="d-flex">
+                                            <input type="checkbox" class="form-check-input">
+                                            <label class="form-check-label mr-4"> سونی</label>
+                                        </div>
+                                        <div class="d-flex">
+                                            <input type="checkbox" class="form-check-input">
+                                            <label class="form-check-label mr-4"> شیااومی</label>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end brands-->
+                    <div class="shadow-media">
+                        <!--start color-->
+                        <div class="bg-white shadow-media mt-2 p-2" data-toggle="collapse" data-target="#filtercolor">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h4 class="mb-0">رنگ</h4>
+                                <i class="fa fa-angle-down"></i>
+                            </div>
+                        </div>
+                        <div class="collapse" id="filtercolor">
+                            <div class="bg-white px-2">
+                                <div class="bg-white brands py-2">
+                                    <form action="" class="form-group mr-2 d-flex flex-column mb-0">
+                                        <div class="d-flex">
+                                            <input type="checkbox" class="form-check-input">
+                                            <label class="form-check-label mr-4"> مشکی</label>
+                                            <i class="fa fa-circle circle1"></i>
+                                        </div>
+                                        <div class="d-flex">
+                                            <input type="checkbox" class="form-check-input">
+                                            <label class="form-check-label mr-4"> آبی</label>
+                                            <i class="fa fa-circle circle2"></i>
+                                        </div>
+                                        <div class="d-flex">
+                                            <input type="checkbox" class="form-check-input">
+                                            <label class="form-check-label mr-4"> قرمز</label>
+                                            <i class="fa fa-circle circle3"></i>
+                                        </div>
+                                        <div class="d-flex">
+                                            <input type="checkbox" class="form-check-input">
+                                            <label class="form-check-label mr-4"> سبز</label>
+                                            <i class="fa fa-circle circle4"></i>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end color-->
+                </div>
+                <!--end side-bar-->
+                <div class="col-12 col-md-9 mt-3">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 bg-white px-2 d-flex justify-content-between">
+                                <div class="pagination d-md-flex align-items-center d-none">
+                                    <i class="fa fa-bars"></i>
+                                    <ul class="list-unstyled d-flex pr-2 mb-0">
+
+                                        <li class="list-inline-item">
+
+                                            <a href="#">جستوجوی کالا </a>
+                                        </li>
+                                        <li class="list-inline-item d-flex align-items-center">
+                                            <i class="fa fa-angle-left pl-2"></i>
+                                            <a href="#"> کالای دیجیتال  </a>
+                                        </li>
+                                        <li class="list-inline-item d-flex align-items-center">
+                                            <i class="fa fa-angle-left pl-2"></i>
+                                            <a href="#"> موبایل  </a>
+                                        </li>
+                                        <li class="list-inline-item d-flex align-items-center">
+                                            <i class="fa fa-angle-left pl-2"></i>
+                                            <a href="#"> گوشی موبایل  </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                                <!--end pagination-->
+                                <div class="d-flex align-items-center on-off">
+                                    <i class="fa fa-recycle"></i>
+                                    <p class="mb-0">فقط نمایش کتاب های موجود</p>
+                                    <div class="on">
+                                        <input type="checkbox" id="mychek">
+                                        <div class="off"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row bg-white  ordering py-2">
+                            <div class="col-12 col-md-9 ">
+                                <div class="d-flex">
+                                    <p class="mb-0">مرتب سازی بر اساس:</p>
+                                    <a href="#" class="px-3">پربازدید ترین ها</a>
+                                    <a href="#" class="px-3">ارزان ترین ها</a>
+                                    <a href="#" class="px-3">گران ترین ها</a>
+                                    <a href="#" class="px-3">پر فروش ترین ها</a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-3 ">
+                                <div class="d-flex l-g">
+                                    <div class="gallary mx-2"><i class="fa fa-th-large"></i></div>
+                                    <div class="list"><i class="fa fa-list"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row bg-white ps">
+                            <div class="col-12  px-0">
+                                <div class="list-group d-flex " id="mylistgroup">
+                                    <a href="#">
+                                        <div class="card ">
+                                            <div class="card-img-top">
+                                                <img src="images/post2.jpg" width="199px" alt="">
+                                            </div>
+                                            <div class="card-body px-0">
+                                                <div class="card-text">
+                                                    <h4>کتاب فیزیکی آرنولد هیتلر به نام نبرد </h4>
+                                                    <p class="gp">ازه فونت و ظاهر متن باشد. معمولا طراحان گرافیک برای صفحه‌آرایی، نخست از متن‌های آزمایشی و بی‌معنی استفاده می‌کنند تا صرفا به مشتری یا صاحب کار خود نشان دهند که صفحه طراحی یا صفحه بندی شده بعد از اینکه
+                                                        متن در آن قرار گیرد چگونه به نظر می‌رسد و قلم‌ها و اندازه‌بندی‌ها چگونه در نظر گرفته شده‌است. از آنجایی که طراحان عموما نویسن</p>
+                                                    <h5>65000 تومان</h5>
+                                                    <div class="d-flex justify-content-between">
+                                                        <del class="olid-price">25000 تومان</del>
+                                                        <span>
+                                                    <i class="fa fa-star"></i>
+                                                    3.8
+                                                </span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="feuter pr-3 mt-2">
+                                                <div class="d-flex pr-3">
+                                                    <i class="fa fa-spinner ml-2"></i>
+                                                    <h6>ویژگی ها</h6>
+                                                </div>
+                                                <ul class="pr-4 list-unstyled mt-2">
+                                                    <li class="d-flex pb-2">
+                                                        <i class="fa fa-caret-left"></i>
+                                                        <p class="mb-0">قطع:رقفی</p>
+                                                    </li>
+                                                    <li class="d-flex pb-2">
+                                                        <i class="fa fa-caret-left"></i>
+                                                        <p class="mb-0">مناسب برای بزرگسالان</p>
+                                                    </li>
+                                                    <li class="d-flex pb-2">
+                                                        <i class="fa fa-caret-left"></i>
+                                                        <p class="mb-0">نوع جلد:شومیز</p>
+                                                    </li>
+                                                    <li class="d-flex pb-2">
+                                                        <i class="fa fa-caret-left"></i>
+                                                        <p class="mb-0">قطع:رقفی</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="card-footer p-0">
+                                                <span>
+                                            <i class="fa fa-star"></i>
+                                           3.8
+                                       </span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="card ">
+                                            <div class="card-img-top">
+                                                <img src="images/post1.jpg" width="199px" alt="">
+                                            </div>
+                                            <div class="card-body px-0">
+                                                <div class="card-text">
+                                                    <h4>کتاب فیزیکی آرنولد هیتلر به نام نبرد </h4>
+                                                    <p class="gp">ازه فونت و ظاهر متن باشد. معمولا طراحان گرافیک برای صفحه‌آرایی، نخست از متن‌های آزمایشی و بی‌معنی استفاده می‌کنند تا صرفا به مشتری یا صاحب کار خود نشان دهند که صفحه طراحی یا صفحه بندی شده بعد از اینکه
+                                                        متن در آن قرار گیرد چگونه به نظر می‌رسد و قلم‌ها و اندازه‌بندی‌ها چگونه در نظر گرفته شده‌است. از آنجایی که طراحان عموما نویسن</p>
+                                                    <h5>65000 تومان</h5>
+                                                    <div class="d-flex justify-content-between">
+                                                        <del class="olid-price">25000 تومان</del>
+                                                        <span>
+                                                        <i class="fa fa-star"></i>
+                                                        3.8
+                                                    </span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="feuter pr-3 mt-2">
+                                                <div class="d-flex pr-3">
+                                                    <i class="fa fa-spinner ml-2"></i>
+                                                    <h6>ویژگی ها</h6>
+                                                </div>
+                                                <ul class="pr-4 list-unstyled mt-2">
+                                                    <li class="d-flex pb-2">
+                                                        <i class="fa fa-caret-left"></i>
+                                                        <p class="mb-0">قطع:رقفی</p>
+                                                    </li>
+                                                    <li class="d-flex pb-2">
+                                                        <i class="fa fa-caret-left"></i>
+                                                        <p class="mb-0">مناسب برای بزرگسالان</p>
+                                                    </li>
+                                                    <li class="d-flex pb-2">
+                                                        <i class="fa fa-caret-left"></i>
+                                                        <p class="mb-0">نوع جلد:شومیز</p>
+                                                    </li>
+                                                    <li class="d-flex pb-2">
+                                                        <i class="fa fa-caret-left"></i>
+                                                        <p class="mb-0">قطع:رقفی</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="card-footer p-0">
+                                                <span>
+                                                <i class="fa fa-star"></i>
+                                               3.8
+                                           </span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="card ">
+                                            <div class="card-img-top">
+                                                <img src="images/post2.jpg" width="199px" alt="">
+                                            </div>
+                                            <div class="card-body px-0">
+                                                <div class="card-text">
+                                                    <h4>کتاب فیزیکی آرنولد هیتلر به نام نبرد </h4>
+                                                    <p class="gp">ازه فونت و ظاهر متن باشد. معمولا طراحان گرافیک برای صفحه‌آرایی، نخست از متن‌های آزمایشی و بی‌معنی استفاده می‌کنند تا صرفا به مشتری یا صاحب کار خود نشان دهند که صفحه طراحی یا صفحه بندی شده بعد از اینکه
+                                                        متن در آن قرار گیرد چگونه به نظر می‌رسد و قلم‌ها و اندازه‌بندی‌ها چگونه در نظر گرفته شده‌است. از آنجایی که طراحان عموما نویسن</p>
+                                                    <h5>65000 تومان</h5>
+                                                    <div class="d-flex justify-content-between">
+                                                        <del class="olid-price">25000 تومان</del>
+                                                        <span>
+                                                            <i class="fa fa-star"></i>
+                                                            3.8
+                                                        </span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="feuter pr-3 mt-2">
+                                                <div class="d-flex pr-3">
+                                                    <i class="fa fa-spinner ml-2"></i>
+                                                    <h6>ویژگی ها</h6>
+                                                </div>
+                                                <ul class="pr-4 list-unstyled mt-2">
+                                                    <li class="d-flex pb-2">
+                                                        <i class="fa fa-caret-left"></i>
+                                                        <p class="mb-0">قطع:رقفی</p>
+                                                    </li>
+                                                    <li class="d-flex pb-2">
+                                                        <i class="fa fa-caret-left"></i>
+                                                        <p class="mb-0">مناسب برای بزرگسالان</p>
+                                                    </li>
+                                                    <li class="d-flex pb-2">
+                                                        <i class="fa fa-caret-left"></i>
+                                                        <p class="mb-0">نوع جلد:شومیز</p>
+                                                    </li>
+                                                    <li class="d-flex pb-2">
+                                                        <i class="fa fa-caret-left"></i>
+                                                        <p class="mb-0">قطع:رقفی</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="card-footer p-0">
+                                                <span>
+                                                    <i class="fa fa-star"></i>
+                                                   3.8
+                                               </span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="card ">
+                                            <div class="card-img-top">
+                                                <img src="images/poste.jpg" width="199px" alt="">
+                                            </div>
+                                            <div class="card-body px-0">
+                                                <div class="card-text">
+                                                    <h4>کتاب فیزیکی آرنولد هیتلر به نام نبرد </h4>
+                                                    <p class="gp">ازه فونت و ظاهر متن باشد. معمولا طراحان گرافیک برای صفحه‌آرایی، نخست از متن‌های آزمایشی و بی‌معنی استفاده می‌کنند تا صرفا به مشتری یا صاحب کار خود نشان دهند که صفحه طراحی یا صفحه بندی شده بعد از اینکه
+                                                        متن در آن قرار گیرد چگونه به نظر می‌رسد و قلم‌ها و اندازه‌بندی‌ها چگونه در نظر گرفته شده‌است. از آنجایی که طراحان عموما نویسن</p>
+                                                    <h5>65000 تومان</h5>
+                                                    <div class="d-flex justify-content-between">
+                                                        <del class="olid-price">25000 تومان</del>
+                                                        <span>
+                                                                <i class="fa fa-star"></i>
+                                                                3.8
+                                                            </span>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="feuter pr-3 mt-2">
+                                                <div class="d-flex pr-3">
+                                                    <i class="fa fa-spinner ml-2"></i>
+                                                    <h6>ویژگی ها</h6>
+                                                </div>
+                                                <ul class="pr-4 list-unstyled mt-2">
+                                                    <li class="d-flex pb-2">
+                                                        <i class="fa fa-caret-left"></i>
+                                                        <p class="mb-0">قطع:رقفی</p>
+                                                    </li>
+                                                    <li class="d-flex pb-2">
+                                                        <i class="fa fa-caret-left"></i>
+                                                        <p class="mb-0">مناسب برای بزرگسالان</p>
+                                                    </li>
+                                                    <li class="d-flex pb-2">
+                                                        <i class="fa fa-caret-left"></i>
+                                                        <p class="mb-0">نوع جلد:شومیز</p>
+                                                    </li>
+                                                    <li class="d-flex pb-2">
+                                                        <i class="fa fa-caret-left"></i>
+                                                        <p class="mb-0">قطع:رقفی</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="card-footer p-0">
+                                                <span>
+                                                        <i class="fa fa-star"></i>
+                                                       3.8
+                                                   </span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+    </main>
+    <div class="bg-secondary text-white pt-2 mt-3">
+        <!--header foother-->
+        <div class="container">
+            <div class="row text-center text-md-right">
+                <div class="col-12 col-md-6">
+                    <p>7 روز هفته , 24 ساعته پاسخگوی شما هستیم</p>
+                </div>
+                <div class="col-12 col-md-2 d-flex px-0 justify-content-center ">
+                    <i class="fa fa-phone ml-2 mt-2"></i>
+                    <p class="mb-0"> 09030346945 | 021-808080 </p>
+                </div>
+                <div class="col-12 col-md-2 d-flex justify-content-center">
+                    <i class="fa fa-question-circle ml-2 mt-2"></i>
+                    <p class="mb-0"> سوالات متداول </p>
+                </div>
+                <div class="col-12 col-md-2 d-flex pr-0 justify-content-center">
+                    <i class="fa fa-envelope ml-2 mt-2"></i>
+                    <p class="mb-0">fatemeehhajizade@gmail.com </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end header-foother-->
+    <div class="container">
+        <div class="row mt-3 footer">
+            <div class=" col-12 col-md-5 d-flex ">
+                <ul class="list-unstyled menu-footer pr-2">
+                    <li class="mb-3"><b>کالا هایی که دیدن کردید</b></li>
+                    <li><a href="#">تماس با ما</a></li>
+                    <li><a href="#">دی جی بن چیست؟</a></li>
+                    <li><a href="#">نحوی خرید</a></li>
+                    <li><a href="#">تماس با ما</a></li>
+
+                </ul>
+                <ul class="list-unstyled menu-footer">
+                    <li class="mb-3"><b>کالا هایی که دیدن کردید</b></li>
+                    <li><a href="#">تماس با ما</a></li>
+                    <li><a href="#">دی جی بن چیست؟</a></li>
+                    <li><a href="#">نحوی خرید</a></li>
+                    <li><a href="#">تماس با ما</a></li>
+
+                </ul>
+            </div>
+            <div class="col-12 col-md-7">
+                <p><b>در شبکه های احتماعی با ما همراه باشید</b></p>
+                <p>از تخفیف ها و جدید ترین های کافه بوک با خبر شید</p>
+                <form action="" class="d-flex">
+                    <input type="text" placeholder="آدرس ایمیل خود را وارد کنید..." class="">
+                    <button type="submit " class=" btn  mr-4">تایید ایمیل</button>
+                </form>
+                <ul class="pr-0 mt-5">
+                    <li class="list-inline-item"><i class="fab1 fab fa-facebook-f"></i></li>
+                    <li class="list-inline-item"><i class="fab2 fab fa-twitter"></i></li>
+                    <li class="list-inline-item"><i class="fab3 fab fa-linkedin-in"></i></li>
+                    <li class="list-inline-item"><i class="fab4 fab fa-google-plus-g"></i></li>
+                    <li class="list-inline-item"><i class="fab5 fab fa-instagram"></i></li>
+                    <li class="list-inline-item"><i class="fab6 fab fa-telegram"></i></li>
+                    <li class="list-inline-item"><img src="images/sibapp.png" alt="" class="img-fluid"></li>
+                    <li class="list-inline-item"><img src="images/cafebazar.png" alt="" class="img-fluid"></li>
+
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/djkala.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+</body>
+
+</html>
